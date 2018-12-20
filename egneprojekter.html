@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Egne projekter</title>
+	 <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+	
+	
+<body>
+	<div class="grid grid-pad">
+	<header>	
+	<div class="menu">
+		<div class="col-3-12">
+			<div class="logo1">
+			   <a href="index.html">
+			   <img class="logo" src="img/logo.png" alt="Logo">
+				</a>
+			</div>
+		</div>
+		
+		
+		<div class="col-9-12">
+		     <nav>
+		       <div class="toggle">
+			      <i class="fa fa-bars menu"></i>
+	           </div>
+		
+		        <ul>
+			       <li><a>Projekter<i class="fa"></i></a>
+				      <ul>
+					    <li><a href="flow1.html">Flow 1</a></li>
+					    <li><a href="flow2.html">Flow 2</a></li>
+					    <li><a href="flow3.html">Flow 3</a></li>
+					    <li><a href="flow4.html">Flow 4</a></li>
+					    <li><a href="flow5.html">Flow 5</a></li>
+				      </ul>
+			       </li>
+					<li><a href="egneprojekter.html" class="her">Egne projekter</a></li>
+			       <li><a href="omkring.html">Omkring</a></li>
+			       <li><a href="kontakt.html">Kontakt</a></li>
+		         </ul>
+	          </nav>
+		</div>
+	</div>	
+		<div class="col-1-1">
+			<div class="streg">
+			</div>
+		</div>
+	</header>		
+		
+		<div class="col-1-1">
+			<div class="overskrift">
+			    <div>
+					<h1>Egne projekter</h1>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="col-1-1">
+			<div class="row"> 
+			<div class="column">
+					<img src="img/lady.png" style="width:100%" alt="!1" class="imgaes">
+				    <img src="img/raket.png" style="width:100%" alt="!2" class="imgaes">
+				    <img src="img/lightball.png" style="width:100%" alt="!3" class="imgaes">
+					<img src="img/kaktus.png" style="width:100%" alt="!4" class="imgaes">
+				    <img src="img/fanta.png" style="width:100%" alt="!5" class="imgaes">
+				</div>
+				<div class="column">
+					<img src="img/shark.png" style="width:100%" alt="!6" class="imgaes">
+					<img src="img/fisk.png" style="width:100%" alt="!7" class="imgaes">  
+					<img src="img/andreas.png" style="width:100%" alt="!8" class="imgaes">
+					<img src="img/sidsel.png" style="width:100%" alt="!9" class="imgaes">
+					<img src="img/mouse.png" style="width:100%" alt="!10" class="imgaes">
+					<img src="img/cocacola.png" style="width:100%" alt="!11" class="imgaes">
+				</div>
+		    </div>
+		</div>
+		
+	
+		
+		<div class="col-1-1 hide-on-mobile">
+			<div class="footer">
+			    <footer>
+					<a href="https://dk.linkedin.com/in/sidsel-k%C3%A6rgaard-madsen-292184172" target="_blank">
+						<img class="social" src="img/linkin.png" alt="linkin">
+					</a> 
+					<a href="https://github.com/SidselKaergaard" target="_blank">
+					<img class="social"  src="img/github.png" alt="github">
+					</a>
+				    <p class="copy">&copy Sidsel Kærgaard Madsen</p>
+				</footer>
+			</div>
+		</div>
+	
+		
+		
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script type="text/javascript">
+		
+		$("nav div").click(function(){
+			$("ul").slideToggle();
+			$("ul ul").css("display","none");
+		});
+		
+		$("ul li").click(function(){
+			$("ul ul").slideUp();
+			$(this).find("ul").slideToggle();
+		});
+		
+		$(window).resize(function(){
+			if($(window).width()>600){
+				$("ul").removeAttr("style");
+			}
+		});
+	</script>
+</body>
+</html>

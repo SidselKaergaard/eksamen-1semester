@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Flow 2</title>
+<meta name="viewport" content="width=divice-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="grid grid-pad">
+	<header>
+		<div class="col-3-12">
+			<div class="logo1">
+				<a href="index.html">
+			   <img class="logo" src="img/logo.png" alt="Logo">
+				</a>
+			</div>
+		</div>
+		
+		
+		<div class="col-9-12">
+		     <nav>
+		       <div class="toggle">
+			      <i class="fa fa-bars menu"></i>
+	           </div>
+		
+		        <ul>
+			       <li><a href="#" class="her">Projekter<i class="fa"></i></a>
+				      <ul>
+					    <li><a href="flow1.html">Flow 1</a></li>
+					    <li><a href="flow2.html" class="flow">Flow 2</a></li>
+					    <li><a href="flow3.html">Flow 3</a></li>
+					    <li><a href="flow4.html">Flow 4</a></li>
+					    <li><a href="flow5.html">Flow 5</a></li>
+				      </ul>
+			       </li>
+					<li><a href="egneprojekter.html">Egne projekter</a></li>
+			        <li><a href="omkring.html">Omkring</a></li>
+			        <li><a href="kontakt.html">Kontakt</a></li>
+		         </ul>
+	          </nav>
+		</div>
+		
+		<div class="col-1-1">
+			<div class="streg">
+			</div> 
+		</div>
+	</header>	
+		<div class="col-1-1">
+			<div class="overskrift">
+			    <div>
+					<h1>Flow 2 </h1>
+				</div>
+			</div>
+		</div>
+		
+	<div class="col-8-12">
+			<div class="content1">
+				<div class="slideshow-container">
+					<div class="mySlides fade">
+						<img src="img/Flow billeder/flow2.png" style="width:100%" alt="flow2">
+					</div>
+					<div class="mySlides fade">
+						<img src="img/Flow billeder/flow2.1.png" style="width:100%" alt="flow2">
+					</div>
+					<div class="mySlides fade">
+						<img src="img/Flow billeder/flow2.2.png" style="width:100%" alt="flow2">
+					</div>
+					
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-4-12">
+			<div class="content1 z-index">
+					<div class="box shadow">
+						<div class="circle"></div>
+						<a  href="https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3A81cf089b-75b7-4bab-823f-4b8be6602c5b" class="link" target="blank">Projektbeskrivelse</a>
+				    </div>
+				    <div class="box shadow">
+						<div class="circle"></div>
+						<a href="http://sidselkaergaard.dk/portfolio/index1.html" class="link" target="blank">Orginal løsning</a>
+				    </div>
+				    <div class="box shadow">
+						<div class="circle"></div>
+						<a  href="index.html" class="link" target="blank">Forbederet løsning</a>
+				    </div>
+				</div>
+			</div>
+		
+		
+		<div class="col-1-1">
+			<div class="to">
+			    <div>
+					<h2 class="tekst1">Byg din portfolio</h2>
+					<p class="tekst">I det andet flow skulle vi bygge vores prototype af portfolioet. På det tidspunkt var det på baggrund af den viden jeg havde, samt de kompetancer jeg besad på daværende tidspunkt. 
+				     <br>
+					Nu hvor jeg sidder og skal redesigne mit portfolio, har jeg udviklet mig en del og besidder nu en større viden inde for de forsekllige områder. Derfor er der personligt rigtig mange ting som jeg ønsker, at forbedre og gøre mere professionelt og personligt at se på.
+					</p>
+					<br>
+					<h2 class="tekst1">Læring</h2>
+					<p class="tekst">I dette flow blev jeg introduceret for Adobe Dreamweaver, hvortil jeg lærte de grundlæggende færdigheder inden for både HTML og CSS. I forlængelse af det lærte jeg, hvordan man benytter GitHub og hvordan det fungere med eget domaine. I flowet fik jeg også en teoretisk viden omrking designprincippet, layout og grid. Afslutningsvis implementerede jeg en fungerende online version af mit portfolio, på baggrund af alt den viden jeg havde fået i løbet af flowet. 
+				    </p>
+					<img class="laring" src="img/dw.png" alt="DW">
+					<img class="laring2" src="img/html.png" alt="HTML">
+					<img class="laring2" src="img/css.png" alt="CSS">
+				</div>
+			</div>
+		</div>
+
+		
+		<div class="col-1-1 hide-on-mobile">
+			<div class="footer">
+			    <footer>
+					<a href="https://dk.linkedin.com/in/sidsel-k%C3%A6rgaard-madsen-292184172" target="_blank">
+						<img class="social" src="img/linkin.png" alt="linkin">
+					</a> 
+					<a href="https://github.com/SidselKaergaard" target="_blank">
+					    <img class="social"  src="img/github.png" alt="github">
+					</a>
+				    <p class="copy">&copy Sidsel Kærgaard Madsen</p>
+				</footer>
+			</div>
+		</div>
+	
+		
+		
+	</div>
+	
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script type="text/javascript">
+		
+		$("nav div").click(function(){
+			$("ul").slideToggle();
+			$("ul ul").css("display","none");
+		});
+		
+		$("ul li").click(function(){
+			$("ul ul").slideUp();
+			$(this).find("ul").slideToggle();
+		});
+		
+		$(window).resize(function(){
+			if($(window).width()>600){
+				$("ul").removeAttr("style");
+			}
+		});
+		
+		
+		var slideIndex = 1;
+		showSlides(slideIndex);
+		
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+		}
+
+        function showSlides(n) {
+			var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+			if (n > slides.length) {slideIndex = 1}    
+			if (n < 1) {slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+				
+				slides[i].style.display = "none";  
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";  
+			dots[slideIndex-1].className += " active";
+		}
+	</script>
+</body>
+</html>

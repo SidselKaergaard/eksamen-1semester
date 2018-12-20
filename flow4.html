@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Flow 4</title>
+<meta name="viewport" content="width=divice-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="grid grid-pad">
+	<header>
+		<div class="col-3-12">
+			<div class="logo1">
+			   <a href="index.html">
+			   <img class="logo" src="img/logo.png" alt="Logo">
+				</a>
+			</div>
+		</div>
+		
+		
+		<div class="col-9-12">
+		     <nav>
+		       <div class="toggle">
+			      <i class="fa fa-bars menu"></i>
+	           </div>
+		
+		        <ul>
+			       <li><a  class="her">Projekter<i class="fa"></i></a>
+				      <ul>
+					    <li><a href="flow1.html">Flow 1</a></li>
+					    <li><a href="flow2.html">Flow 2</a></li>
+					    <li><a href="flow3.html">Flow 3</a></li>
+					    <li><a href="flow4.html" class="flow">Flow 4</a></li>
+					    <li><a href="flow5.html">Flow 5</a></li>
+				      </ul>
+			       </li>
+					<li><a href="egneprojekter.html">Egne projekter</a></li>
+			        <li><a href="omkring.html">Omkring</a></li>
+			        <li><a href="kontakt.html">Kontakt</a></li>
+		         </ul>
+	          </nav>
+		</div>
+		
+		<div class="col-1-1">
+			<div class="streg">
+			</div> 
+		</div>
+	</header>	
+		<div class="col-1-1">
+			<div class="overskrift">
+			    <div>
+					<h1>Flow 4</h1>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-8-12">
+			<div class="content1">
+				<div class="slideshow-container">
+					<div class="mySlides fade">
+						<img src="img/Flow billeder/flow4.png" style="width:100%" alt="flow4">
+					</div>
+					<div class="mySlides fade">
+						<img src="img/Flow billeder/flow4.1.png" style="width:100%" alt="flow4">
+					</div>
+					<div class="mySlides fade">
+						<img src="img/Flow billeder/flow4.2.png" style="width:100%" alt="flow4">
+					</div>
+					
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="col-4-12">
+			<div class="content1 z-index">
+					<div class="box shadow">
+						<div class="circle"></div>
+						<a  href="https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3Abcb162f7-0b7e-446c-a69c-f7ab21737195" class="link" target="blank">Projektbeskrivelse</a>
+				    </div>
+				    <div class="box shadow">
+						<div class="circle"></div>
+						<a  href="https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3Af3f8988d-a247-409c-a80e-ee8b6be3569b" class="link" target="blank">Rapport</a>
+				    </div>
+				    <div class="box shadow">
+						<div class="circle"></div>
+						<a href="http://sidselkaergaard.dk/Sweetbot-projekt/index.html" class="link" target="blank" >Orginal løsning</a>
+				    </div>
+				    <div class="box shadow">
+						<div class="circle"></div>
+						<a  href="http://sidselkaergaard.dk/Sweetbot-projekt-remaking/" class="link" target="blank">Forbederet løsning</a>
+				    </div>
+				</div>
+			</div>
+		
+		
+		<div class="col-1-1">
+			<div class="to">
+			    <div>
+					<h2 class="tekst1">Sweetbot</h2>
+					<p class="tekst">I dette flow prøvede vi kræfter med, at arbejde i grupper om et større projekt. Vi skulle ved hjælp af en design manual lave en dansk udgave af Sweetbots hjemmeside, og selv komme med visuelle elementer dertil.
+					Som gruppe løste vi opgaven fælles, så det var muligt at få alles ideer med samt muligheden for at lære af hinanden. Vi har efterfølgende også rettet på de små layout fejl, som kom til syne efter præsentationen.
+					</p>
+					<br>
+					<h2 class="tekst1">Læring</h2>
+					<p class="tekst">I dette flow fik jeg en lille forsmag på noget JavaScript. Udover det blev jeg introduceret til, hvordan man gør en hjemmeside responsive og hvordan man implementere en design manual.
+					<br>
+					Da Sweetbot foregik i grupper føler jeg, at jeg har fået en større læring inden for, hvordan man organisere et så stort projekt i mellem flere personer, og hvordan man arbejder sammen om de forskellige områder. I og med vi var flere om projektet, føler jeg også, at jeg har fået en masse viden og læring fra mine gruppe medlemmer. </p>
+					<img class="laring" src="img/js.png" alt="JavaScript">
+				</div>
+			</div>
+		</div>
+
+		
+		<div class="col-1-1 hide-on-mobile">
+			<div class="footer">
+			    <footer>
+					<a href="https://dk.linkedin.com/in/sidsel-k%C3%A6rgaard-madsen-292184172" target="_blank">
+						<img class="social" src="img/linkin.png" alt="linkin">
+					</a> 
+					<a href="https://github.com/SidselKaergaard" target="_blank">
+					    <img class="social"  src="img/github.png" alt="github">
+					</a>
+				    <p class="copy">&copy Sidsel Kærgaard Madsen</p>
+				</footer>
+			</div>
+		</div>
+	
+		
+		
+	</div>
+	
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script type="text/javascript">
+		
+		$("nav div").click(function(){
+			$("ul").slideToggle();
+			$("ul ul").css("display","none");
+		});
+		
+		$("ul li").click(function(){
+			$("ul ul").slideUp();
+			$(this).find("ul").slideToggle();
+		});
+		
+		$(window).resize(function(){
+			if($(window).width()>600){
+				$("ul").removeAttr("style");
+			}
+		});
+		
+		
+		
+		var slideIndex = 1;
+		showSlides(slideIndex);
+		
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+		}
+
+        function showSlides(n) {
+			var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+			if (n > slides.length) {slideIndex = 1}    
+			if (n < 1) {slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+				
+				slides[i].style.display = "none";  
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";  
+			dots[slideIndex-1].className += " active";
+		}
+		
+	</script>
+</body>
+</html>
