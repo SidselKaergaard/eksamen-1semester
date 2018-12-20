@@ -1,0 +1,676 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import "simplegrid.css";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300');
+
+
+/*---------------------------------------------General styling af body-------------------------------------------- */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.streg{
+	border-bottom: 2px solid #ff9648;
+}
+
+.streg1{
+	border-bottom: 0.5px solid #ff9648;
+}
+
+/*------------------------------------------------------forside-----------------------------------------------------*/
+.frontbillede{
+	align-content: center;
+	width: 1100px;
+	height: 700px;
+	margin-bottom: -5px;
+	z-index: -99;
+	display: flex;
+}
+
+/*---------------------------------------------Styling på navigationen-------------------------------------------- */
+
+.logo{
+	height: 128px;
+	width: 290px;
+}
+
+nav{
+	height: 70px;
+	margin-top: 58px;
+	z-index: 1;
+}
+
+.her{
+	color: #ff9648;
+}
+
+.flow{
+	color:#FF8239;
+}
+
+ul{
+	margin:0;
+	padding:0;
+	list-style-type: none;
+	position: relative;
+	float: right;
+	z-index: 1;
+}
+
+ul li{
+	display: inline-block;
+}
+
+ul li a{
+	color:black;
+	font-size: 30px;
+	text-decoration: none;
+	padding: 15px;
+	display: block;
+	z-index: 1;
+}
+
+ul li a:hover{
+	color: #FF8239;
+}
+
+ul ul{
+	position: absolute;
+	min-width: 200px;
+	display: none;	
+	border-radius: 2px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+ul ul li{
+	display: block;
+	background: #FFA561; 
+}
+
+ul li:hover ul{
+	display: block;
+}
+
+nav div{
+	float: right;
+	height: 20px;
+	color:black;
+	font-size: 33px; 
+	padding: 0.6em;
+	cursor: pointer;
+	display: none;
+	margin-top: -20px;
+}
+
+
+/*---------------------------------------------Styling på footer-------------------------------------------- */
+
+footer{
+	width: 100%;
+	height: 70px;
+}
+
+.footer{
+	border-top:2px solid #FF9B2A;
+}
+
+.copy{
+	font-size: 25px;
+	padding-top: 15px;
+	padding-left: 5px;
+	font-weight: normal;
+	color: black;
+}
+
+.social{
+	width: 45px;
+	float: right;
+	padding-top: 15px;
+	padding-left: 10px;
+	padding-right: 15px;
+}
+
+
+/*---------------------------------------------Styling af flow siderne-------------------------------------------- */
+
+.to{
+	margin-top: 15px;
+	padding-top: 40px;
+	padding-left: 10px;
+	margin-bottom:25px;
+	
+}
+.content{
+	height: 510px;
+	margin-top: 15px;
+	padding-top: 40px;
+	padding-left: 10px;
+}
+
+.content1{
+	height: 370px;
+	margin-top: 5px;
+}
+
+.overskrift{
+	height: 50px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding-left: 5px;
+}
+
+h1{
+	font-size: 40px;
+}
+
+.tekst{
+	font-weight: lighter;
+	font-size: 23px;
+	word-spacing: 6px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.tekst1{
+	font-weight: bold;
+	font-size: 24px;
+	word-spacing: 6px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.her{
+	text-decoration:none;
+    color: #F09D56;
+	font-weight:bold;
+}
+
+.laring{
+	width: 60px;
+	margin-top: 20px;
+	margin-right: 10px;
+}
+
+.laring2{
+	width: 50px;
+	margin-top: 20px;
+	margin-right: 10px;
+}
+
+/*-----------paper strips--------*/
+.link{
+	text-decoration: none;
+	display: block;
+	color: black;
+	font-size: 27px;
+	padding-left: 49px;
+	margin-top: -10px;
+}
+
+.box {
+    width: 230px;
+    min-width: 100px;
+    display: block;
+    height: 40px;
+    position: relative;
+    border-radius: 5px;
+    background: linear-gradient(to right, #FF8239 35%, #FFA561 100%);
+    margin-bottom: 40px;
+    margin-left: 10px;
+    padding: 15px 10px 0 70px;
+    color: darkslategray;
+    box-shadow: 1px 2px 1px -1px #777;
+    transition: background 200ms ease-in-out;
+}
+
+.shadow {
+    position: relative;
+}
+		
+.shadow:before {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 13px;
+    right: 7px;
+    width: 75%;
+    top: 0;
+    box-shadow: 0 15px 10px #777;
+    -webkit-transform: rotate(4deg);
+          transform: rotate(4deg);
+    transition: all 150ms ease-in-out;
+}
+
+.box:hover {
+    background: linear-gradient(to right, #FF8552 0%, #FFA561 100%);
+}
+
+.shadow:hover::before {
+    -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+    bottom: 20px;
+    z-index: -10;
+}
+
+.circle {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    border-radius: 50%;
+    box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5), inset 0 0 0 25px white;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+
+/*------------billed slid-------------*/
+
+.slideshow-container {
+	max-width: 650px;
+    position: relative;
+    margin: auto;
+	margin-left:8px;
+	box-shadow: 3px 3px 13px  gray;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.z-index{
+	z-index: -1;
+}
+
+.pil{
+	width: 100px;
+}
+
+/*---------------------------------------------Styling af flow 5 siden-------------------------------------------- */
+.et{
+	margin-top: 43px;
+	margin-bottom: 20px;
+}
+
+.tre{
+	margin-bottom: 30px;
+}
+
+.portfolio{
+	
+	padding-top: 10px;
+	padding-left: 10px;
+	margin-bottom: 10px;
+	padding-right: 27px;
+}
+
+.fly{
+	margin-left: 90px;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	display: flex;
+}
+
+.planlagning{
+	text-decoration: none;
+	color: #ff9648;
+	font-weight: bold;
+}
+
+/*---------------------------------------------Styling af egne projekter-------------------------------------------*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+	margin-bottom: 20px;
+}
+
+.column {
+	box-sizing: border-box;
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 10px;
+}
+
+.column .imgaes {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+.imgaes{
+	box-shadow: 1px 5px 5px #666;/*Skygge*/
+	margin-bottom: 10px;
+	
+}
+
+/*---------------------------------------------styling af omkring siden--------------------------------------------*/
+.mig{
+    margin-top: 30px;
+	margin-left: 120px;
+	margin-bottom: 20px;
+	width: 400px;
+}
+
+.mig1{
+	display: flex;
+}
+
+.sidsel{
+	margin-bottom: 10px;
+}
+
+.omkring{
+	width: 400px;
+	margin-top: 30px;
+}
+
+/*---------------------------------------------Styling af kontakt siden-------------------------------------------- */
+.kontakt{
+	background-image: url("img/kontakt1.png");
+	background-size:cover;
+	height: 700px;
+	margin-top: -20px;
+}
+
+form{ 
+	width: 475px;
+	height: 560px;
+	margin-top: 20px;
+	padding-left: 360px;
+	padding-top: 120px;
+	font-size: 20px;
+}
+		
+input[type=text], select, textarea {
+    width: 90%; 
+    padding: 14px;   
+    border: 1px solid #646464; 
+    border-radius: 2px; 
+    box-sizing: border-box; 
+    margin-top: 10px; 
+    margin-bottom: 16px;
+    resize: vertical; 
+}
+		
+input[type=email],select, textarea{
+	width: 90%; 
+    padding: 14px;   
+    border: 1px solid #646464; 
+    border-radius: 2px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical; 
+}
+
+input[type=submit] {
+    background : url("img/send2.png") no-repeat center center;
+	width : 115px;
+	height :52px;
+	border : none;
+}
+
+.send{
+    margin-left: 150px;
+}
+
+.link{
+	padding-left: 5px;
+}
+
+
+
+
+/*------------------------------------Styling af max-width:600px--------------------------------------------------------*/
+@media screen and (max-width:600px){
+	
+	.frontbillede{
+		align-content: center;
+		width: 370px;
+		flex: 100%;
+		max-width: 100%;
+   }
+	
+	.mig{
+		margin-left: 0px;
+	}
+	
+	.mig1{	
+		flex: 100%;
+		max-width: 100%;
+	}
+	
+	.fly{
+		margin-left: 0px;
+		flex:100%;
+		max-width: 100%;
+	}
+	
+	.logo1{
+		width: 15%;
+		float: left;
+	}
+
+	header{
+		height: 120px;
+	}
+	
+	nav{
+		width: 25%;
+		float:right;
+	}
+	
+	nav div{
+		display: block;
+	}
+	
+	ul{
+		display: none;
+		position: static;
+		background:#FFA561;
+		float: right;
+		border-radius: 2px;
+	}
+	
+	ul li{
+		display: block;
+	}
+	
+	ul ul{
+		position: static;
+		background: #FFA561;
+	}
+	
+	.content{
+		height: 900px;
+		
+	}
+	.content1{
+		margin-top: 5px;
+	}
+	
+	slider{
+		display:block;
+		width: 450px;
+		height: 300px;
+		background-color: #C4C4C4;
+		overflow:hidden;
+		position: absolute;
+		box-shadow:5px 5px 15px gray;
+		margin-top: 5px;
+}
+
+	.kontakt{
+		background: none;
+	}
+	
+	
+	.column {
+        flex: 100%;
+        max-width: 100%;
+    }
+	
+}
+
+/*-------------------------------------------------max-width:800px-----------------------------------------------------------------*/
+@media screen and (max-width:800px){
+	
+	.column {
+        flex: 50%;
+        max-width: 50%;
+    }
+	
+	
+	.logo1{
+		width: 15%;
+		float: left;
+	}
+	
+	.streg{
+		margin-top: 120px;
+	}
+	
+	ul li{
+		margin-left: -15px;
+	}
+	
+	.content{
+		height: 700px;
+		
+	}
+	.content1{
+		margin-top: 5px;
+	}
+	
+	.link{
+		font-size: 20px;
+		margin-left: -20px;
+	}
+	
+	.box{
+		width: 130px;
+	}
+	
+	slider{
+		display:block;
+		width: 400px;
+		height: 300px;
+		background-color: #C4C4C4;
+		overflow:hidden;
+		position: absolute;
+		box-shadow:5px 5px 15px gray;
+		margin-top: 5px;
+}
+	
+    .kontakt{
+		background: none;
+	}
+	
+	form{
+		margin-top: 10px;
+		width: 400px;
+		margin-left: -140px;
+	}
+		
+	.column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+	
+}
+
+/*-----------------------------------------------max-width:1000px----------------------------------------------------------------*/
+@media screen and (max-width:1000px){
+	
+	.frontbillede{
+		align-content: center;
+		width: 950px;
+		height: 600px;
+}
+	
+	.logo1{
+		width: 15%;
+		float: left;
+	}
+	
+
+	.content{
+		height: 900px;
+		
+	}
+	.content1{
+		margin-top: 5px;
+	}
+	
+	slider{
+		display:block;
+		width: 450px;
+		height: 300px;
+		background-color: #C4C4C4;
+		overflow:hidden;
+		position: absolute;
+		box-shadow:5px 5px 15px gray;
+		margin-top: 5px;
+}
+	
+	
+	.column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+	
+}
+
+
+
+

@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Kontakt</title>
+<meta name="viewport" content="width=divice-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="grid grid-pad">
+	<header>	
+		
+		<div class="col-3-12">
+			<div class="logo1">
+			   <a href="index.html">
+			   <img class="logo" src="img/logo.png" alt="Logo">
+				</a>
+			</div>
+		</div>
+		
+		
+		<div class="col-9-12">
+		     <nav>
+		       <div class="toggle">
+			      <i class="fa fa-bars menu"></i>
+	           </div>
+		
+		        <ul>
+			       <li><a>Projekter<i class="fa"></i></a>
+				      <ul>
+					    <li><a href="flow1.html">Flow 1</a></li>
+					    <li><a href="flow2.html">Flow 2</a></li>
+					    <li><a href="flow3.html">Flow 3</a></li>
+					    <li><a href="flow4.html">Flow 4</a></li>
+					    <li><a href="flow5.html">Flow 5</a></li>
+				      </ul>
+			       </li>
+					<li><a href="egneprojekter.html">Egne projekter</a></li>
+			       <li><a href="omkring.html">Omkring</a></li>
+			       <li><a href="kontakt.html" class="her">Kontakt</a></li>
+		         </ul>
+	          </nav>
+		</div>
+	</header>		
+		
+		<div class="col-1-1">
+			<div class="kontakt">
+			     <form action="mailto:s.simpensperle@©mail.com" method="post" enctype="text/plain">
+                    <p>
+	                   <label>Navn:</label>
+	                </p>	
+	                <p>
+                      <input type="text" name="name" placeholder="Skriv dit navn.." autofocus required>
+	                </p>
+					 
+	                <p>
+	                   <label>Email:</label>
+	                </p>
+	                <p>
+	                  <input type="email" name="email" placeholder="Skriv din email.." required>
+	                </p>
+					 
+					 <p>
+					    <label>Emne:</label>
+	                </p>
+	                <p>
+	                  <input type="text" name="emne" placeholder="Emne.." required>
+	                </p>
+						 
+	                <p>
+		              <label>Besked:</label>
+                    </p>
+	                <p>
+                      <textarea name="comment" placeholder="Din besked..."></textarea>
+	                </p>
+	
+					 <input class="send" type="image" src="img/send2.png" alt="submit" name="submit" width="90px;"/>
+                 </form>
+			</div>
+		</div>
+		
+
+		<div class="col-1-1 hide-on-mobile">
+			<div>
+			    <footer>
+					<a href="https://dk.linkedin.com/in/sidsel-k%C3%A6rgaard-madsen-292184172" target="_blank">
+						<img class="social" src="img/linkin.png" alt="linkin">
+					</a> 
+					<a href="https://github.com/SidselKaergaard" target="_blank">
+					    <img class="social"  src="img/github.png" alt="github">
+					</a>
+				    <p class="copy">&copy Sidsel Kærgaard Madsen</p>
+				</footer>
+			</div>
+		</div>
+	
+		
+		
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script type="text/javascript">
+		
+		$("nav div").click(function(){
+			$("ul").slideToggle();
+			$("ul ul").css("display","none");
+		});
+		
+		$("ul li").click(function(){
+			$("ul ul").slideUp();
+			$(this).find("ul").slideToggle();
+		});
+		
+		$(window).resize(function(){
+			if($(window).width()>600){
+				$("ul").removeAttr("style");
+			}
+		});
+	</script>
+	
+	
+	
+</body>
+</html>
